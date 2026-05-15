@@ -52,8 +52,14 @@ Socket programming finds applications in various domains, including web developm
 3.	File Transfer Protocol: Protocols like FTP (File Transfer Protocol) utilize socket programming for transferring files between a client and a server.
 4.	Networked Games: Online multiplayer games rely on socket programming to facilitate communication between game clients and servers.
 5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
- Client:
 
+PROGRAM:
+ 
+Client:
+
+```
+#DEVELOPED BY: DHANAVISHNI M
+#REGISTER NO: 212225040064
 import socket  
 s=socket.socket()  
 s.bind(('localhost',8000))  
@@ -68,20 +74,26 @@ continue
 else:  
 c.close()  
 break
-
+```
 Server:
-
+```
+#DEVELOPED BY: DHANAVISHNI M
+#REGISTER NO: 212225040064
 import socket s=socket.socket()  
 s.connect(('localhost',8000))  
 while True:  
 print(s.recv(1024).decode()) 
 s.send("Acknowledgement Recived".encode())
+```
 
-Output: Client
-<img width="1600" height="678" alt="WhatsApp Image 2026-05-14 at 6 04 25 PM" src="https://github.com/user-attachments/assets/6e83ce25-4699-4098-ab28-570ff1653479" />
+Output:
+
+Client:
+<img width="1600" height="365" alt="WhatsApp Image 2026-05-14 at 6 04 25 PM (1)" src="https://github.com/user-attachments/assets/0e236d9c-e92f-43d0-8a32-d61211ec5023" />
 
 Server:
-<img width="1600" height="365" alt="WhatsApp Image 2026-05-14 at 6 04 25 PM (1)" src="https://github.com/user-attachments/assets/0e236d9c-e92f-43d0-8a32-d61211ec5023" />
+<img width="1600" height="678" alt="WhatsApp Image 2026-05-14 at 6 04 25 PM" src="https://github.com/user-attachments/assets/6e83ce25-4699-4098-ab28-570ff1653479" />
+
 
 ## Result:
 Thus the study of Socket Programming Completed Successfully
